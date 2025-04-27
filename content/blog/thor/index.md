@@ -70,6 +70,7 @@ Thor demonstrated how to:
 - Maintain relevance across multiple phases
 
 ## Related Articles
+
 - [Why Doctor Strange is the Most Powerful Avenger](/blog/strange)
 - [The Impact of Iron Man on the MCU](/blog/ironman)
 
