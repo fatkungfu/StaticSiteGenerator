@@ -1,46 +1,51 @@
-# Tolkien Fan Club
+# Marvel Fan Club
 
-![JRR Tolkien sitting](/images/tolkien.png)
+![Marvel Studios Logo](/images/marvel.png)
 
-Here's the deal, **I like Tolkien**.
+Here's the deal, **I love Marvel Comics and the MCU**.
 
-> "I am in fact a Hobbit in all but size."
+> "With great power comes great responsibility."
 >
-> -- J.R.R. Tolkien
+> -- Uncle Ben Parker
 
 ## Blog posts
 
-- [Why Glorfindel is More Impressive than Legolas](/blog/glorfindel)
-- [Why Tom Bombadil Was a Mistake](/blog/tom)
-- [The Unparalleled Majesty of "The Lord of the Rings"](/blog/majesty)
+- [Why Doctor Strange is the Most Powerful Avenger](/blog/strange)
+- [The Impact of Iron Man on the MCU](/blog/ironman)
+- [The Perfect Balance of Thor's Character Evolution](/blog/thor)
 
-## Reasons I like Tolkien
+## Reasons I love Marvel
 
-- You can spend years studying the legendarium and still not understand its depths
-- It can be enjoyed by children and adults alike
-- Disney _didn't ruin it_ (okay, but Amazon might have)
-- It created an entirely new genre of fantasy
+- The interconnected storytelling spanning multiple movies and TV shows
+- The perfect blend of action, humor, and heart
+- It made comic book movies _mainstream entertainment_
+- It revolutionized the concept of a shared cinematic universe
 
 ## My favorite characters (in order)
 
-1. Gandalf
-2. Bilbo
-3. Sam
-4. Glorfindel
-5. Galadriel
-6. Elrond
-7. Thorin
-8. Sauron
-9. Aragorn
+1. Iron Man
+2. Doctor Strange
+3. Thor
+4. Black Widow
+5. Spider-Man
+6. Black Panther
+7. Captain America
+8. Scarlet Witch
+9. Loki
 
-Here's what `elflang` looks like (the perfect coding language):
+Here's what `starktech` looks like (the perfect coding language):
 
 ```
 func main(){
-    fmt.Println("Aiya, Ambar!")
+    jarvis.Print("The suit and I are one.")
 }
 ```
 
-Want to get in touch? [Contact me here](/contact).
+Want to geek out about Marvel? [Contact me here](/contact).
 
-This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) from the course on [Boot.dev](https://www.boot.dev).
+Follow us on social media:
+- [Twitter](https://twitter.com/marvelfanclub)
+- [Instagram](https://instagram.com/marvelfanclub)
+- [Discord](https://discord.gg/marvelfanclub)
+
+This fan site is powered by pure enthusiasm and a lot of coffee. No infinity stones were harmed in its making.
