@@ -68,4 +68,5 @@ Want to discuss more about the Sorcerer Supreme? [Return to main page](/)
 - [The Perfect Balance of Thor's Character Evolution](/blog/thor)
 
 ---
+
 *This post is protected by the Eye of Agamotto*

@@ -12,6 +12,7 @@ class BlockType(Enum):
     QUOTE = "quote"
     OLIST = "ordered_list"
     ULIST = "unordered_list"
+    HRULE = "horizontal_rule"
 
 
 def markdown_to_blocks(markdown):
@@ -28,6 +29,8 @@ def markdown_to_blocks(markdown):
 def block_to_block_type(block):
     lines = block.split("\n")
 
+    if block.strip() in ["---", "***", "___"]:
+        return BlockType.HRULE
     if block.startswith(("# ", "## ", "### ", "#### ", "##### ", "###### ")):
         return BlockType.HEADING
     if len(lines) > 1 and lines[0].startswith("```") and lines[-1].startswith("```"):
@@ -75,7 +78,16 @@ def block_to_html_node(block):
         return ulist_to_html_node(block)
     if block_type == BlockType.QUOTE:
         return quote_to_html_node(block)
+    if block_type == BlockType.HRULE:
+        return horizontal_rule_to_html_node(block)
     raise ValueError("invalid block type")
+
+
+def horizontal_rule_to_html_node(block):
+    stripped_block = block.strip()
+    if stripped_block not in ["---", "***", "___"]:
+        raise ValueError("invalid horizontal rule block")
+    return ParentNode("hr", [], None)
 
 
 def text_to_children(text):
@@ -111,11 +123,25 @@ def heading_to_html_node(block):
 def code_to_html_node(block):
     if not block.startswith("```") or not block.endswith("```"):
         raise ValueError("invalid code block")
-    text = block[4:-3]
-    raw_text_node = TextNode(text, TextType.TEXT)
+
+    # Split the first line to check for language
+    lines = block.split("\n")
+    first_line = lines[0][3:].strip()  # Remove ``` and whitespace
+
+    # Get the code content without first/last lines
+    code_content = "\n".join(lines[1:-1])
+
+    # Create text node with the code content
+    raw_text_node = TextNode(code_content, TextType.TEXT)
     child = text_node_to_html_node(raw_text_node)
-    code = ParentNode("code", [child])
-    return ParentNode("pre", [code])
+
+    # Add language class if specified
+    props = {}
+    if first_line:
+        props["class"] = f"language-{first_line}"
+
+    code = ParentNode("code", [child], props)
+    return ParentNode("pre", [code], {"class": "code-block"})
 
 
 def olist_to_html_node(block):
