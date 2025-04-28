@@ -123,11 +123,25 @@ def heading_to_html_node(block):
 def code_to_html_node(block):
     if not block.startswith("```") or not block.endswith("```"):
         raise ValueError("invalid code block")
-    text = block[4:-3]
-    raw_text_node = TextNode(text, TextType.TEXT)
+
+    # Split the first line to check for language
+    lines = block.split("\n")
+    first_line = lines[0][3:].strip()  # Remove ``` and whitespace
+
+    # Get the code content without first/last lines
+    code_content = "\n".join(lines[1:-1])
+
+    # Create text node with the code content
+    raw_text_node = TextNode(code_content, TextType.TEXT)
     child = text_node_to_html_node(raw_text_node)
-    code = ParentNode("code", [child])
-    return ParentNode("pre", [code])
+
+    # Add language class if specified
+    props = {}
+    if first_line:
+        props["class"] = f"language-{first_line}"
+
+    code = ParentNode("code", [child], props)
+    return ParentNode("pre", [code], {"class": "code-block"})
 
 
 def olist_to_html_node(block):

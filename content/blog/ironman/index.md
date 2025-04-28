@@ -50,9 +50,9 @@ The impact of Stark technology on the MCU:
 
 ## Cultural Impact
 
-```
-"Sometimes you gotta run before you can walk."
-```
+> "Sometimes you gotta run before you can walk."
+>
+> -- Tony Stark
 
 Iron Man's influence extends beyond the MCU:
 - Redefined superhero origin stories

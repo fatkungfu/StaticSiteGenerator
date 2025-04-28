@@ -137,3 +137,50 @@ hr {
   background: #e23636;
   box-shadow: 0 0 8px rgba(240, 197, 55, 0.3);
 }
+
+.code-block {
+    background-color: #252839;
+    border-radius: 6px;
+    padding: 1em;
+    margin: 1em 0;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(240, 197, 55, 0.1);
+    position: relative;
+}
+
+/* Language-specific styling */
+.language-python {
+    color: #518cca;  /* Captain America blue */
+}
+
+.language-javascript {
+    color: #f0c537;  /* Iron Man gold */
+}
+
+.language-java {
+    color: #e23636;  /* Marvel red */
+}
+
+.language-html {
+    color: #7dc45e;  /* Hulk green */
+}
+
+.language-css {
+    color: #9b6b8f;  /* Scarlet Witch purple */
+}
+
+/* Default language color */
+code:not([class*="language-"]) {
+    color: #ffffff;
+}
+
+/* Optional: Add a label for the language */
+[class*="language-"]::before {
+    content: attr(class);
+    position: absolute;
+    top: 0;
+    right: 1em;
+    color: #666;
+    font-size: 0.8em;
+    font-family: "Courier New", monospace;
+}
