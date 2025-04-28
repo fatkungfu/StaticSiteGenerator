@@ -35,7 +35,7 @@ Here's the deal, **I love Marvel Comics and the MCU**.
 
 Here's what `starktech` looks like (the perfect coding language):
 
-```javascript
+```
 func main(){
     jarvis.Print("The suit and I are one.")
 }

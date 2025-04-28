@@ -35,6 +35,7 @@ Strange's magical abilities include:
 ## Beyond Physical Limitations
 
 Unlike heroes who depend on:
+
 - Physical strength (Hulk)
 - Technology (Iron Man)
 - Specific weapons (Thor)
@@ -51,14 +52,14 @@ Strange's powers are limited only by his knowledge and imagination.
 ## The Strategic Mind
 
 What truly sets Strange apart is his combination of:
+
 - Photographic memory
 - Medical expertise
 - Tactical genius
 - Mystical knowledge
 
-```
-"We're in the endgame now."
-```
+> "We're in the endgame now."
+
 
 Want to discuss more about the Sorcerer Supreme? [Return to main page](/)
 
@@ -69,4 +70,4 @@ Want to discuss more about the Sorcerer Supreme? [Return to main page](/)
 
 ---
 
-*This post is protected by the Eye of Agamotto*
+_This post is protected by the Eye of Agamotto_

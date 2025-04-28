@@ -178,5 +178,20 @@ second paragraph
         )
 
 
+def test_blockquote_multiple_paragraphs(self):
+    md = """
+> First paragraph
+> still first paragraph
+>
+> Second paragraph
+> still second paragraph
+"""
+    node = markdown_to_html_node(md)
+    self.assertEqual(
+        node.to_html(),
+        "<div><blockquote><p>First paragraph still first paragraph</p><p>Second paragraph still second paragraph</p></blockquote></div>",
+    )
+
+
 if __name__ == "__main__":
     unittest.main()

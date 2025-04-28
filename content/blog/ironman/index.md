@@ -43,6 +43,7 @@ Tony Stark's journey from:
 ## Technological Legacy
 
 The impact of Stark technology on the MCU:
+
 - Arc reactor innovation
 - Nano-technology suits
 - AI integration (JARVIS/FRIDAY)
@@ -55,6 +56,7 @@ The impact of Stark technology on the MCU:
 > -- Tony Stark
 
 Iron Man's influence extends beyond the MCU:
+
 - Redefined superhero origin stories
 - Popularized tech-based solutions
 - Inspired real-world innovation
@@ -73,4 +75,4 @@ Want to discuss Tony Stark's legacy? [Return to main page](/)
 
 ---
 
-*Powered by Arc Reactor Technology*
+_Powered by Arc Reactor Technology_
