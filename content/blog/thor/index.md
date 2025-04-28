@@ -76,5 +76,6 @@ Thor demonstrated how to:
 
 Want to discuss Thor's journey? [Return to main page](/)
 
----
+***
+
 *Written by the power of Thor*

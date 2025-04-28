@@ -163,6 +163,20 @@ the **same** even with inline stuff
             "<div><pre><code>This is text that _should_ remain\nthe **same** even with inline stuff\n</code></pre></div>",
         )
 
+    def test_horizontal_rule(self):
+        md = """
+first paragraph
+
+---
+
+second paragraph
+"""
+        node = markdown_to_html_node(md)
+        self.assertEqual(
+            node.to_html(),
+            "<div><p>first paragraph</p><hr></hr><p>second paragraph</p></div>",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

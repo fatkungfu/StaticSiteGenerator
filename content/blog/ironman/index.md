@@ -72,4 +72,5 @@ His final act in Endgame showcased the complete transformation of his character,
 Want to discuss Tony Stark's legacy? [Return to main page](/)
 
 ---
+
 *Powered by Arc Reactor Technology*
